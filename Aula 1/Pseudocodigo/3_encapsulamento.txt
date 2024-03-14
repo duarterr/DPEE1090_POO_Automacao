@@ -1,0 +1,27 @@
+# Inicio classe
+    Classe Animal:
+        Atributos publicos:
+            nome
+            idade
+        
+        Atributos privados:
+            idade
+
+        Método publico construtor(nome, idade):
+            this.nome = nome
+            this.idade = idade
+        
+        Método publico fazBarulho():
+            Escrever("O animal ", this.nome, " faz barulho")
+
+        Método publico getIdade():
+            retorna this.idade 
+# Fim classe
+
+# Início do programa principal
+    animal1 = novo Animal("Toby", 10)
+    
+    Escrever(animal1) # SAIDA: {"Toby"}
+    Escrever(animal1.idade) # SAIDA: Indefinida
+    Escrever(animal1.getidade()) # SAIDA: 10
+# Fim do programa principal
