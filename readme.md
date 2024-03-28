@@ -25,7 +25,7 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | Estudo dos operadores aritméticos, de atribuição, comparativos e lógicos.               |
 |      |            | Conversão implícita e casting de tipos de dados.                                        |
 |      |            | Implementação de estruturas condicionais: if-else e operador ternário.                  |
-|      |            | Utilização de laços de repetição: while, for e foreach.                                 |
+|      |            | Utilização de laços de repetição: while,do-while, for e foreach.                                 |
 | **4**    | 04/04/2024 | Definição e Sintaxe de Classes                                                          |
 |      |            | Conceitos fundamentais de classes.                                                      |
 |      |            | Estrutura e sintaxe de declaração de classes.                                           |
