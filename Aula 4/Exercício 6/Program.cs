@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace Course
@@ -7,28 +7,34 @@ namespace Course
     {
         static void Main(string[] args)
         {
-            // Objetos Funcionaio
-            Funcionario func = new Funcionario();
-
-            // Pega com usuario dados do funcionario
-            Console.WriteLine("Digite os dados do funcionário:");
+            // Pega dados da primeira pessoa e salva no objeto pessoa1
+            Console.WriteLine("Dados da primeira pessoa:");
             Console.Write("Nome: ");
-            func.Nome = Console.ReadLine();
-            Console.Write("Salário bruto: ");
-            func.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Imposto: ");
-            func.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            string nome = Console.ReadLine();
+            Console.Write("Idade: ");
+            int idade = int.Parse(Console.ReadLine());
 
-            // Exibe dados digitados
-            Console.WriteLine("Funcionario: " + func.Nome + ", $" + func.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture));
+            // Declara e instancia pessoa1 com construtor 1
+            Pessoa pessoa1 = new Pessoa(nome, idade);
 
-            // Aumento de salário
-            Console.Write("Digite a porcentagem para aumentar o salário: ");
-            double aumento = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            func.AumentarSalario(aumento);
+            // Pega dados da segunda pessoa e salva no objeto pessoa2
+            Console.WriteLine("Dados da segunda pessoa:");
+            Console.Write("Nome: ");
+            nome = Console.ReadLine();
+            Console.Write("Idade: ");
+            idade = int.Parse(Console.ReadLine());
+            Console.Write("Altura: ");
+            double altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            // Exibe dados atualizados
-            Console.WriteLine("Dados atualizados: " + func.Nome + ", $" + func.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture));
+            // Declara e instancia pessoa1 com construtor 2
+            Pessoa pessoa2 = new Pessoa(nome, idade, altura);
+
+            // Mostra nome da pessoa  mais velha
+            Console.WriteLine("Pessoa mais velha: " + (pessoa1.Idade > pessoa2.Idade ? pessoa1.Nome : pessoa2.Nome));
+
+            // Exibe altura das duas pessoas
+            Console.WriteLine(pessoa1.Altura);
+            Console.WriteLine(pessoa2.Altura);
         }
     }
 }
