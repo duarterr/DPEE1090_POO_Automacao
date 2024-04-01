@@ -22,7 +22,7 @@ namespace Course
             yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            // Calulo da area de X
+            // Calculo da area de X
             double p = (xA + xB + xC)/2;
             double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
 
