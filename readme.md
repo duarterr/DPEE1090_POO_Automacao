@@ -29,7 +29,7 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 | **4**    | 04/04/2024 | Definição e Sintaxe de Classes                                                          |
 |      |            | Conceitos fundamentais de classes.                                                      |
 |      |            | Estrutura e sintaxe de declaração de classes.                                           |
-|      |            | Atributos e construtores.                                                               |
+|      |            | Atributos, métodos e construtores.                                                               |
 | **5**    | 11/04/2024 | Objetos                                                                                 |
 |      |            | Compreensão dos conceitos de objetos e instância de classes.                            |
 |      |            | Declaração e utilização de objetos.                                                     |
