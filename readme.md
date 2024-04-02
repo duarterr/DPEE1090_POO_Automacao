@@ -43,16 +43,16 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | Utilização de modificadores de acesso em atributos e métodos.                           |
 |      |            | Implementação de getters, setters e propriedades.                                       |
 | **8**    | 02/05/2024 | Avaliação 1                                                                             |
-| **9**    | 09/05/2024 | Dependência 1                                                                           |
-|      |            | Tipos de dependência: associação, agregação e composição.                               |
-| **10**   | 16/05/2024 | Dependência 2                                                                           |
-|      |            | Análise dos efeitos da dependência na manutenção e reutilização de código.              |
-|      |            | Estratégias para reduzir o acoplamento entre classes.                                   |
-| **11**   | 23/05/2024 | Herança                                                                                 |
+| **9**   | 09/05/2024 | Herança                                                                                 |
 |      |            | Definição e conceito de herança em POO.                                                 |
 |      |            | Tipos de herança e suas características.                                                |
 |      |            | Análise das vantagens e desvantagens da utilização da herança.                          |
 |      |            | Recomendações e boas práticas de uso da herança.                                        |
+| **10**    | 16/05/2024 | Dependência 1                                                                           |
+|      |            | Tipos de dependência: associação, agregação e composição.                               |
+| **11**   | 23/05/2024 | Dependência 2                                                                           |
+|      |            | Análise dos efeitos da dependência na manutenção e reutilização de código.              |
+|      |            | Estratégias para reduzir o acoplamento entre classes.                                   |
 | **12**   | 06/06/2024 | Métodos e Classes Abstratas                                                             |
 |      |            | Introdução ao conceito de métodos e classes abstratas.                                  |
 |      |            | Implementação de métodos e classes abstratas.                                           |
