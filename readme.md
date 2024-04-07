@@ -30,9 +30,10 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | Conceitos fundamentais de classes.                                                      |
 |      |            | Estrutura e sintaxe de declaração de classes.                                           |
 |      |            | Atributos, métodos e construtores.                                                               |
-| **5**    | 11/04/2024 | Objetos                                                                                 |
+| **5**    | 11/04/2024 | Instâncias de classes - Objetos                                                                                 |
 |      |            | Compreensão dos conceitos de objetos e instância de classes.                            |
-|      |            | Declaração e utilização de objetos.                                                     |
+|      |            | Métodos padrão de classes.                                                     |
+|      |            | Membros estáticos.                                                     |
 |      |            | Exemplos práticos                                                                       |
 | **6**    | 18/04/2024 | Métodos e Abstração                                                                     |
 |      |            | Definição e implementação de métodos                                                    |
