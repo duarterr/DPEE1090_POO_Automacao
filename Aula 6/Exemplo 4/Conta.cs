@@ -49,7 +49,7 @@ namespace Course
         //  Método para exibir os dados na tela 
         public override string ToString() 
         {
-            return Titular + ": _saldo: " + _saldo.ToString("F2");
+            return Titular + ":Saldo: " + _saldo.ToString("F2");
         }
     }
 }

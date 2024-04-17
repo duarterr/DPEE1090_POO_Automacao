@@ -9,51 +9,38 @@ namespace Course
     internal class Conta
     {
         public string Titular;
-        private double _saldo; // Convenção de nomes: Membros privados são escritos na forma _camelCase
+
+        // Propriedade autodeimplementada Saldo
+        // Apenas get é acessível fora da classe.
+        // Alteração do valor não é permitida
+        public double Saldo { get; private set; }
 
         // Construtor da classe
         public Conta(string titular, double saldo)
         {
             Titular = titular;
-            _saldo = saldo;
+            Saldo = saldo;
         }
 
         // Método para efetuar um depósito
         public void Deposito (double valor)
         {
-            _saldo += valor;
+            Saldo += valor;
         }
 
         // Método para efetuar um saque
         public void Saque (double valor)
         {
-            if (_saldo >= valor) 
+            if (Saldo >= valor) 
             { 
-                _saldo -= valor;
-            }
-        }
-
-        // Propriedade Saldo
-        public double Saldo
-        {
-            // Getter da propriedade
-            get 
-            { 
-                return _saldo; 
-            }
-
-            // Setter da propriedade
-            set
-            {
-                if (value >= 0) 
-                    _saldo =  value;
+                Saldo -= valor;
             }
         }
     
         //  Método para exibir os dados na tela 
         public override string ToString() 
         {
-            return Titular + ": Saldo: " + _saldo.ToString("F2");
+            return Titular + ": saldo: " + Saldo.ToString("F2");
         }
 
 
