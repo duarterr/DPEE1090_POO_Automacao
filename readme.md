@@ -35,14 +35,15 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | Métodos padrão de classes.                                                     |
 |      |            | Membros estáticos.                                                     |
 |      |            | Exemplos práticos                                                                       |
-| **6**    | 18/04/2024 | Métodos e Abstração                                                                     |
+| **6**    | 18/04/2024 | Abstração e Encapsulamento                                                                    |
 |      |            | Definição e implementação de métodos                                                    |
 |      |            | Conceito de abstração e sua aplicação em classes.                                       |
 |      |            | Conceito de Interface e implementação                                                   |
-| **7**    | 28/04/2024 | Encapsulamento                                                                          |
 |      |            | Exploração do conceito de encapsulamento.                                               |
 |      |            | Utilização de modificadores de acesso em atributos e métodos.                           |
 |      |            | Implementação de getters, setters e propriedades.                                       |
+| **7**    | 28/04/2024 | Exercícios                                                                          |
+|      |            | Resolução de exercícios com conceitos aprendidos até o momento.                                       |
 | **8**    | 02/05/2024 | Avaliação 1                                                                             |
 | **9**   | 09/05/2024 | Herança                                                                                 |
 |      |            | Definição e conceito de herança em POO.                                                 |
