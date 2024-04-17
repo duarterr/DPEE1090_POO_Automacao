@@ -28,7 +28,10 @@ namespace Course
             // Agora tentativa de saque é valida pois "criou-se" saldo sem um depósito
             conta.Saque(20000);
             Console.WriteLine(conta);
-
+			
+			// Também não deveria ser permitido pois nosso modelo de conta não deveria permitir saldos negativos
+            conta.Saldo = -1000;
+            Console.WriteLine(conta);
         }
     }
 }

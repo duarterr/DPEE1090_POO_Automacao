@@ -23,12 +23,7 @@ namespace Course
             Console.WriteLine(conta);
 
             // Erro pois o atribulo "saldo" é privado
-            conta.Saldo = 100000000;
-
-            // Agora tentativa de saque é valida pois "criou-se" saldo sem um depósito
-            conta.Saque(20000);
-            Console.WriteLine(conta);
-
+            conta._saldo = 100000000;
         }
     }
 }
