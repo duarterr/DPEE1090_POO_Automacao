@@ -6,10 +6,13 @@
         // Propriedade para o nome do animal.
         public string Nome { get; set; }
 
-        // Método que simula o animal comendo.
-        public void Comer()
-        {
-            Console.WriteLine($"O animal {Nome} está comendo.");
+        // Construtor sem argumentos
+        public Animal() { }
+
+        // Construtor com argumento
+        public Animal(string nome) 
+        {  
+            Nome = nome; 
         }
     }
 }
