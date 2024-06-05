@@ -1,17 +1,5 @@
 ﻿namespace Course
 {
-    // Enumeração que define os dias da semana.
-    public enum DayOfWeek : int
-    {
-        SegundaFeira,
-        TercaFeira,
-        QuartaFeira,
-        QuintaFeira,
-        SextaFeira,
-        Sabado,
-        Domingo,
-    }
-
     // A classe DayPrinter é interna, o que significa que só é acessível dentro do mesmo assembly.
     internal class DayPrinter
     {
