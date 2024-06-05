@@ -8,5 +8,11 @@
         {
             Console.WriteLine($"O cachorro {Nome} está latindo.");
         }
+
+        // Método que simula o animal comendo. Sobreescreve o método da superclasse
+        public new void Comer()
+        {
+            Console.WriteLine($"O cachorro {Nome} está comendo.");
+        }
     }
 }
