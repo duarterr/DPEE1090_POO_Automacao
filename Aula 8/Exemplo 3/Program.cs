@@ -26,6 +26,9 @@
             // Exemplo de downcasting: Convertendo Account de volta para BusinessAccount.
             BusinessAccount bacc2 = (BusinessAccount)acc2;
 
+            // Sintaxe alternativa
+            BusinessAccount bacc3 = acc2 as BusinessAccount; 
+
             // Agora podemos chamar o método Loan, pois a variável bacc2 é do tipo BusinessAccount.
             bacc2.Loan(100.0);
 
@@ -33,12 +36,12 @@
             Account acc3 = sacc;
 
             // A linha abaixo não compila porque Account não é diretamente compatível com BusinessAccount.
-            // BusinessAccount bacc3 = (BusinessAccount)acc3;
+            // BusinessAccount bacc4 = (BusinessAccount)acc3;
 
             // Testando se o downcasting é possível antes de fazer a conversão.
             if (acc3 is BusinessAccount)
             {
-                BusinessAccount bacc4 = (BusinessAccount)acc3;
+                BusinessAccount bacc5 = (BusinessAccount)acc3;
             }
         }
     }

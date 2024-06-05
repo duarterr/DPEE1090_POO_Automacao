@@ -24,12 +24,8 @@
         // Método para sacar um valor da conta.
         public void Withdraw(double amount)
         {
-            // Verifica se há saldo suficiente para o saque.
-            if (Balance >= amount)
-            {
-                // Realiza o saque subtraindo o valor do saldo.
-                Balance -= amount;
-            }
+			// Realiza o saque subtraindo o valor do saldo.
+			Balance -= amount;
         }
 
         // Método para depositar um valor na conta.

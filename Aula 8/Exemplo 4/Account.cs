@@ -22,10 +22,10 @@
         }
 
         // Método para sacar um valor da conta.
-        public void Withdraw(double amount)
+        public virtual void Withdraw(double amount)
         {
-            // Realiza o saque subtraindo o valor do saldo.
-            Balance -= amount;
+            // Realiza o saque subtraindo o valor do saldo e taxa.
+            Balance -= amount + 5.00;
         }
 
         // Método para depositar um valor na conta.
