@@ -12,7 +12,7 @@ namespace Course
             DayPrinter Printer = new DayPrinter();
 
             // Imprime um dia
-            int Dia = 1;
+            DayOfWeek Dia = DayOfWeek.SegundaFeira;
             Console.WriteLine(Printer.GetDayOfWeek(Dia));
         }
     }
