@@ -32,16 +32,13 @@
             // Agora podemos chamar o método Loan, pois a variável bacc2 é do tipo BusinessAccount.
             bacc2.Loan(100.0);
 
-            // Tentativa de downcasting de SavingsAccount para BusinessAccount. Compila mas gera exceção em tempo de execução.
-            Account acc3 = sacc;
-
             // A linha abaixo não compila porque Account não é diretamente compatível com BusinessAccount.
             // BusinessAccount bacc4 = (BusinessAccount)acc3;
 
             // Testando se o downcasting é possível antes de fazer a conversão.
-            if (acc3 is BusinessAccount)
+            if (acc is BusinessAccount)
             {
-                BusinessAccount bacc5 = (BusinessAccount)acc3;
+                BusinessAccount bacc5 = (BusinessAccount)acc;
             }
         }
     }
