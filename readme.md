@@ -42,7 +42,7 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | - Implementação de getters, setters e propriedades.                                           |
 | 7    | 28/04/2024 | Exercícios                                                                                    |
 |      |            | - Resolução de exercícios com conceitos aprendidos até o momento.                             |
-| 8    | 20/06/2027 | Herança                                                                                       |
+| 8    | 06/06/2027 | Herança                                                                                       |
 |      |            | - Definição e conceito de herança em POO.                                                     |
 |      |            | - Vantagens.                                                                                  |
 |      |            | - Recomendações e boas práticas de uso da herança.                                            |
@@ -51,24 +51,24 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | - Sobreposição.                                                                               |
 |      |            | - Classes e métodos selados.                                                                  |
 | 9    | 13/06/2024 | Avaliação 1                                                                                   |
-| 10   | 06/06/2024 | Enumerações e Associações                                                                     |
+| 10   | 20/06/2024 | Enumerações e Associações                                                                     |
 |      |            | - Definição e conceito de enumerações.                                                        |
 |      |            | - Vantagens do uso de enumerações.                                                            |
 |      |            | - Definição e conceito de associação.                                                         |
 |      |            | - Tipos de associação: agregação, composição e dependência.                                   |
-| 11   | 28/06/2024 | Métodos e Classes Abstratas                                                                   |
+| 11   | 27/06/2024 | Métodos e Classes Abstratas                                                                   |
 |      |            | - Introdução ao conceito de métodos e classes abstratas.                                      |
 |      |            | - Implementação de métodos e classes abstratas.                                               |
 |      |            | - Diferenças entre classes abstratas e interfaces.                                            |
-| 12   | 27/06/2024 | Polimorfismo 1                                                                                |
+| 12   | 04/07/2024 | Polimorfismo 1                                                                                |
 |      |            | - Definição de polimorfismo e sua importância na POO.                                         |
 |      |            | - Polimorfismo estático: sobrecarga de métodos e operadores.                                  |
 |      |            | - Polimorfismo dinâmico: substituição de métodos em tempo de execução.                        |
-| 13   | 04/07/2024 | Polimorfismo 2                                                                                |
+| 13   | 11/07/2024 | Polimorfismo 2                                                                                |
 |      |            | - Apresentação de exemplos de polimorfismo em cenários de desenvolvimento de software.        |
 |      |            | - Discussão sobre boas práticas e padrões de projeto relacionados ao uso de polimorfismo.     |
 |      |            | - Prática de implementação de polimorfismo em cenários diversos.                              |
-| 14   | 11/07/2024 | Exercícios                                                                                    |
+| 14   | A definir  | Exercícios                                                                                    |
 |      |            | - Resolução de exercícios com conceitos aprendidos até o momento.                             |
 | 15   | A definir  | Avaliação 2                                                                                   |
 | 16   | A definir  | Exame                                                                                         |
