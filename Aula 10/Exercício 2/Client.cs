@@ -5,13 +5,13 @@ namespace Course
     internal class Client
     {
         // Propriedade pública para armazenar o nome do cliente
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         // Propriedade pública para armazenar o email do cliente
-        public string Email { get; set; }
+        public string Email { get; private set; }
 
         // Propriedade pública para armazenar a data de nascimento do cliente
-        public DateTime BirthDate { get; set; }
+        public DateTime BirthDate { get; private set; }
 
         // Construtor padrão que não faz nada específico
         public Client()
@@ -30,7 +30,7 @@ namespace Course
         public override string ToString()
         {
             // Retorna uma string que inclui o nome, a data de nascimento formatada e o email do cliente
-            return $"{Name}, ({BirthDate:dd/MM/yyyy}) - {Email}";
+            return $"{Name} ({BirthDate:dd/MM/yyyy}) - {Email}";
         }
     }
 }

@@ -8,16 +8,16 @@ namespace Course
     internal class Order
     {
         // Propriedade pública Moment que armazena o momento da ordem
-        public DateTime Moment { get; set; }
+        public DateTime Moment { get; private set; }
 
         // Propriedade pública Status que armazena o status da ordem
-        public OrderStatus Status { get; set; }
+        public OrderStatus Status { get; private set; }
 
         // Propriedade pública Client que armazena o cliente associado à ordem
-        public Client Client { get; set; }
+        public Client Client { get; private set; }
 
         // Lista de OrderItems que armazena os itens da ordem
-        public List<OrderItem> Items { get; set; } = new List<OrderItem>();
+        public List<OrderItem> Items { get; private set; } = new List<OrderItem>();
 
         // Construtor padrão vazio da classe Order
         public Order()
@@ -32,11 +32,13 @@ namespace Course
             Client = client;    // Inicializa a propriedade Client com o valor fornecido
         }
 
-        // Método para adicionar um item à lista de Items
-        public void AddItem(OrderItem item)
+        // Método para criar e adicionar itens diretamente na classe Order
+        public void AddItem(int quantity, double price, Product product)
         {
+            OrderItem item = new OrderItem(quantity, price, product);
             Items.Add(item);
         }
+
 
         // Método para remover um item da lista de Items
         public void RemoveItem(OrderItem item)

@@ -5,13 +5,13 @@ namespace Course
     internal class OrderItem
     {
         // Propriedade pública Quantity que armazena a quantidade do item
-        public int Quantity { get; set; }
+        public int Quantity { get; private set; }
 
         // Propriedade pública Price que armazena o preço unitário do item
-        public double Price { get; set; }
+        public double Price { get; private set; }
 
         // Propriedade pública Product que armazena o produto associado ao item
-        public Product Product { get; set; }
+        public Product Product { get; private set; }
 
         // Construtor padrão vazio da classe OrderItem
         public OrderItem()

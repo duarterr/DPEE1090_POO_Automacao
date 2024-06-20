@@ -4,10 +4,10 @@
     internal class Product
     {
         // Propriedade pública Name que armazena o nome do produto
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         // Propriedade pública Price que armazena o preço do produto
-        public double Price { get; set; }
+        public double Price { get; private set; }
 
         // Construtor padrão vazio da classe Product
         public Product()

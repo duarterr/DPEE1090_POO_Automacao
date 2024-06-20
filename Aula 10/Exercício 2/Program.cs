@@ -56,11 +56,8 @@ namespace Course
                 Console.Write("Quantity: ");
                 int quantity = int.Parse(Console.ReadLine());
 
-                // Cria um novo objeto OrderItem com a quantidade, preço e produto fornecidos
-                OrderItem orderItem = new OrderItem(quantity, price, product);
-
-                // Adiciona o item criado à ordem
-                order.AddItem(orderItem);
+                // Adiciona um item a ordem com os dados fornecidos
+                order.AddItem(quantity, price, product);
             }
 
             // Cria um espaço em branco para melhorar a visualização
