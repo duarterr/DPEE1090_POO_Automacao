@@ -1,7 +1,7 @@
 ﻿namespace Course
 {
     // Define uma classe interna (internal) chamada Triangle (Triângulo) que herda da classe Shape (Forma)
-    internal class Triangle : Shape
+    internal class Triangle : Shape, IResizable
     {
         // Propriedades para armazenar a base e altura do triângulo
         public double Base { get; set; }
@@ -28,6 +28,13 @@
             // vamos retornar 0 neste caso. Para um triângulo específico, como um triângulo retângulo, 
             // precisaríamos implementar a lógica apropriada aqui.
             return 0;
+        }
+
+        // Implementação do método Resize() da interface IResizable para redimensionar o triângulo
+        public void Resize(double scale)
+        {
+            Base *= scale;
+            Height *= scale;
         }
     }
 }

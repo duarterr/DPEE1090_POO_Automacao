@@ -7,6 +7,9 @@
             Rectangle rectangle = new Rectangle(5, 10, "blue");
             Triangle triangle = new Triangle(4, 3, "red");
 
+            rectangle.Resize(2);
+            triangle.Resize(10);
+
             Console.WriteLine("Rectangle:");
             Console.WriteLine($"Width: {rectangle.Width}, Height: {rectangle.Height}");
             Console.WriteLine($"Number of sides: {rectangle.GetNumSides()}");

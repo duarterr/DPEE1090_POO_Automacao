@@ -2,7 +2,7 @@
 {
 
     // Define uma classe interna (internal) chamada Rectangle (Retângulo) que herda da classe Shape (Forma)
-    internal class Rectangle : Shape
+    internal class Rectangle : Shape, IResizable
     {
         // Propriedades para armazenar largura e altura do retângulo
         public double Width { get; set; }
@@ -25,6 +25,13 @@
         public override double GetPerimeter()
         {
             return 2 * (Width + Height);
+        }
+
+        // Implementação do método Resize() da interface IResizable para redimensionar o retângulo
+        public void Resize(double scale)
+        {
+            Width *= scale;
+            Height *= scale;
         }
     }
 }
