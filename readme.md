@@ -64,11 +64,10 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | - Definição de polimorfismo e sua importância na POO.                                         |
 |      |            | - Polimorfismo estático: sobrecarga de métodos e operadores.                                  |
 |      |            | - Polimorfismo dinâmico: substituição de métodos em tempo de execução.                        |
-| 13   | 11/07/2024 | Polimorfismo 2                                                                                |
-|      |            | - Apresentação de exemplos de polimorfismo em cenários de desenvolvimento de software.        |
-|      |            | - Discussão sobre boas práticas e padrões de projeto relacionados ao uso de polimorfismo.     |
-|      |            | - Prática de implementação de polimorfismo em cenários diversos.                              |
-| 14   | A definir  | Exercícios                                                                                    |
+| 13   | 11/07/2024 | Extension Methods e Detecção e tratamento de erros                                            |
+|      |            | - Definição e utilização de extension methods.                                                |
+|      |            | - Exceções: blocos try/catch/finally e lançamento de exceções.                                |
+| 14   | 18/07/2024 | Exercícios                                                                                    |
 |      |            | - Resolução de exercícios com conceitos aprendidos até o momento.                             |
-| 15   | A definir  | Avaliação 2                                                                                   |
-| 16   | A definir  | Exame                                                                                         |
+| 15   | 25/07/2024 | Avaliação 2                                                                                   |
+| 16   | 01/08/2024 | Exame                                                                                         |
