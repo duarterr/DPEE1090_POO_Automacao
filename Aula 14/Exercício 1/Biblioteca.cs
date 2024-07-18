@@ -35,7 +35,7 @@
         }
 
         // Método público para emprestar um livro da biblioteca para um usuário específico
-        public void Emprestar(string tituloLivro, int idUsuario)
+        public void EmprestarLivro(string tituloLivro, int idUsuario)
         {
             // Busca o livro na lista de Livros pelo título fornecido
             Livro livro = Livros.Find(l => l.Titulo == tituloLivro);
@@ -55,7 +55,7 @@
         }
 
         // Método público para devolver um livro à biblioteca
-        public void Devolver(string tituloLivro)
+        public void DevolverLivro(string tituloLivro)
         {
             // Busca o livro na lista de Livros pelo título fornecido
             Livro livro = Livros.Find(l => l.Titulo == tituloLivro);

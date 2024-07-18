@@ -33,16 +33,16 @@
             biblioteca.ListarLivros();
 
             // Operações de empréstimo de livros
-            biblioteca.Emprestar("Livro 1", 1);  // Livro 1 emprestado para usuário com Id 1 (usuario1)
-            biblioteca.Emprestar("Livro 1", 2);  // Tentativa de emprestar Livro 1 para usuário com Id 2 (usuario2)
-            biblioteca.Emprestar("Livro X", 1);  // Tentativa de emprestar Livro X para usuário com Id 1 (usuario1)
+            biblioteca.EmprestarLivro("Livro 1", 1);  // Livro 1 emprestado para usuário com Id 1 (usuario1)
+            biblioteca.EmprestarLivro("Livro 1", 2);  // Tentativa de emprestar Livro 1 para usuário com Id 2 (usuario2)
+            biblioteca.EmprestarLivro("Livro X", 1);  // Tentativa de emprestar Livro X para usuário com Id 1 (usuario1)
 
             // Listagem dos livros após as operações de empréstimo
             biblioteca.ListarLivros();
 
             // Operações de devolução de livros
-            biblioteca.Devolver("Livro X");  // Tentativa de devolver Livro X à biblioteca
-            biblioteca.Devolver("Livro 1");  // Devolução do Livro 1 à biblioteca
+            biblioteca.DevolverLivro("Livro X");  // Tentativa de devolver Livro X à biblioteca
+            biblioteca.DevolverLivro("Livro 1");  // Devolução do Livro 1 à biblioteca
 
             // Listagem dos livros após as operações de devolução
             biblioteca.ListarLivros();
