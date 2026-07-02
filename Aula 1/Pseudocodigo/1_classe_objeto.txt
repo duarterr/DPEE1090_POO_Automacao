@@ -1,21 +1,23 @@
-# Inicio classe
-    Classe Animal:
-        Atributos:
-            nome
-            idade
-        
-        Método construtor(nome, idade):
-            this.nome = nome
-            this.idade = idade
-        
-        Método fazBarulho():
-            Escrever("O animal ", this.nome, " faz barulho")
-# Fim classe
+# Início da classe
+Classe Animal:
+    Atributos:
+        nome
+        idade
+
+    Método construtor(nome, idade):
+        this.nome = nome
+        this.idade = idade
+
+    Método fazBarulho():
+        Escrever("O animal ", this.nome, " faz barulho")
+# Fim da classe
 
 # Início do programa principal
-    animal1 = novo Animal("Toby", 10)
-    animal2 = novo Animal("Rex", 5)
-    
-    Escrever(animal1) # SAIDA: {"Toby", 10}
-    Escrever(animal2) # SAIDA: {"Rex", 5}
+animal1 = novo Animal("Toby", 10)
+animal2 = novo Animal("Rex", 5)
+
+animal1.fazBarulho()   # SAÍDA: O animal Toby faz barulho
+animal2.fazBarulho()   # SAÍDA: O animal Rex faz barulho
+
+Escrever(animal1.nome, ", ", animal1.idade)   # SAÍDA: Toby, 10
 # Fim do programa principal
