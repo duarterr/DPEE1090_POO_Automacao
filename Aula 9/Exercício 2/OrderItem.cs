@@ -1,4 +1,6 @@
-﻿// Define o namespace do projeto
+﻿using System.Globalization;
+
+// Define o namespace do projeto
 namespace Course
 {
     // Definição da classe OrderItem
@@ -35,7 +37,7 @@ namespace Course
         // Sobrescreve o método ToString para retornar uma representação textual do OrderItem
         public override string ToString()
         {
-            return $"{Product.Name}, ${Price:F2}, Quantity: {Quantity}, Subtotal: ${SubTotal():F2}";
+            return $"{Product.Name}, ${Price.ToString("F2", CultureInfo.InvariantCulture)}, Quantity: {Quantity}, Subtotal: ${SubTotal().ToString("F2", CultureInfo.InvariantCulture)}";
         }
     }
 }

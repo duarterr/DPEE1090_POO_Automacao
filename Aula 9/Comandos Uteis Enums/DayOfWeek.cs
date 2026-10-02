@@ -1,8 +1,8 @@
 namespace Course
 {
-    enum DayOfWeek : int
+    public enum DayOfWeek : int
     {
-        SegundaFeira,
+        SegundaFeira = 1,
         TercaFeira,
         QuartaFeira,
         QuintaFeira,

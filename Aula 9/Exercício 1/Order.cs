@@ -1,4 +1,6 @@
-﻿namespace Course
+﻿using System.Globalization;
+
+namespace Course
 {
     internal class Order
     {
@@ -18,7 +20,7 @@
         // Método ToString para imprimir os dados do pedido
         public override string ToString()
         {
-            return $"Order ID: {Id}, Value: ${Value}, Status: {Status}";
+            return $"Order ID: {Id}, Value: ${Value.ToString("F2", CultureInfo.InvariantCulture)}, Status: {Status}";
         }
     }
 }

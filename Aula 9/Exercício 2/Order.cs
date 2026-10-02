@@ -1,5 +1,6 @@
 ﻿// Necessário pois usaremos o StringBuilder da classe System.Text
 using System.Text;
+using System.Globalization;
 
 // Define o namespace do projeto
 namespace Course
@@ -32,10 +33,9 @@ namespace Course
             Client = client;    // Inicializa a propriedade Client com o valor fornecido
         }
 
-        // Método para criar e adicionar itens diretamente na classe Order
-        public void AddItem(int quantity, double price, Product product)
+        // Método para adicionar um item à lista de Items
+        public void AddItem(OrderItem item)
         {
-            OrderItem item = new OrderItem(quantity, price, product);
             Items.Add(item);
         }
 
@@ -63,7 +63,7 @@ namespace Course
             StringBuilder sb = new StringBuilder();
 
             // Adiciona a string formatada "Order moment: " seguida da data e hora formatada de Moment ao StringBuilder
-            sb.AppendLine($"Order moment: {Moment.ToString("dd/MM/yyyy HH:mm:ss")}");
+            sb.AppendLine($"Order moment: {Moment.ToString("dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture)}");
 
             // Adiciona a string formatada "Order status: " seguida do Status da ordem ao StringBuilder
             sb.AppendLine($"Order status: {Status}");
@@ -79,7 +79,7 @@ namespace Course
                 sb.AppendLine(item.ToString());
 
             // Adiciona a string formatada "Total price: $" seguida do valor total da ordem ao StringBuilder
-            sb.AppendLine($"Total price: ${Total():F2}");
+            sb.AppendLine($"Total price: ${Total().ToString("F2", CultureInfo.InvariantCulture)}");
 
             // Retorna a representação textual completa da ordem como uma string
             return sb.ToString();

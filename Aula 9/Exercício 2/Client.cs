@@ -1,4 +1,6 @@
-﻿// Define o namespace do projeto
+﻿using System.Globalization;
+
+// Define o namespace do projeto
 namespace Course
 {
     // A classe Client é interna, o que significa que só é acessível dentro do mesmo assembly
@@ -30,7 +32,7 @@ namespace Course
         public override string ToString()
         {
             // Retorna uma string que inclui o nome, a data de nascimento formatada e o email do cliente
-            return $"{Name} ({BirthDate:dd/MM/yyyy}) - {Email}";
+            return $"{Name} ({BirthDate.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)}) - {Email}";
         }
     }
 }

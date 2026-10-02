@@ -10,19 +10,19 @@ namespace Course
         static void Main(string[] args)
         {
             // Solicita e lê os dados do cliente
-            Console.WriteLine("Enter client data: ");
+            Console.WriteLine("Enter client data:");
             Console.Write("Name: ");
             string clientName = Console.ReadLine();
             Console.Write("Email: ");
             string email = Console.ReadLine();
             Console.Write("Birth date (DD/MM/YYYY): ");
-            DateTime birthDate = DateTime.Parse(Console.ReadLine());
+            DateTime birthDate = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
 
             // Cria um espaço em branco para melhorar a visualização
             Console.WriteLine();
 
             // Solicita e lê os dados da ordem
-            Console.WriteLine("Enter order data: ");
+            Console.WriteLine("Enter order data:");
             Console.Write("Status: ");
             OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
 
@@ -56,8 +56,9 @@ namespace Course
                 Console.Write("Quantity: ");
                 int quantity = int.Parse(Console.ReadLine());
 
-                // Adiciona um item a ordem com os dados fornecidos
-                order.AddItem(quantity, price, product);
+                // Cria o item da ordem e o adiciona à ordem
+                OrderItem item = new OrderItem(quantity, price, product);
+                order.AddItem(item);
             }
 
             // Cria um espaço em branco para melhorar a visualização
