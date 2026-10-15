@@ -26,7 +26,7 @@ namespace Course
             Console.Write("Altura: ");
             double altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            // Declara e instancia pessoa1 com construtor 2
+            // Declara e instancia pessoa2 com construtor 2
             Pessoa pessoa2 = new Pessoa(nome, idade, altura);
 
             // Mostra nome da pessoa  mais velha
