@@ -70,7 +70,7 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | - Exceções.                                                                                   |
 |      |            | - Blocos try/catch/finally.                                                                   |
 |      |            | - Lançamento de exceções.                                                                     |
-| 14   | 13/11/2026 | Exercícios                                                                                    |
+| 14   | 27/11/2026 | Exercícios                                                                                    |
 |      |            | - Resolução de exercícios com conceitos aprendidos até o momento.                             |
 | 15   | 04/12/2026 | Avaliação 2                                                                                   |
 | 16   | 11/12/2026 | Exame                                                                                         |
