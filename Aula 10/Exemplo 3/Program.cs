@@ -5,39 +5,68 @@
         // Método principal da aplicação.
         static void Main(string[] args)
         {
-            // UPCASTING: conversão implícita da subclasse para a superclasse.
-            // Criando instâncias de BusinessAccount e SavingsAccount diretamente como Account.
-            Account acc = new BusinessAccount(1004, "Bob", 0.0, 200.0);
-            Account acc2 = new SavingsAccount(1005, "Ana", 100.0, 0.01);
+            // ------------------------------------------------------------------
+            // PARTE 1 - UPCASTING: duas variáveis, um único objeto
+            // ------------------------------------------------------------------
 
-            // A linha abaixo não compila: a variável acc é do tipo Account, que não possui o método Loan.
-            // acc.Loan(100.0);
+            // Um único objeto: a conta empresa do Bruno
+            BusinessAccount contaEmpresa =
+                new BusinessAccount(1002, "Bruno", 100.0, 500.0);
 
-            // DOWNCASTING: conversão explícita da superclasse para a subclasse.
-            // Convertendo Account de volta para BusinessAccount.
-            BusinessAccount bacc = (BusinessAccount)acc;
+            // UPCASTING: conta (tipo Account) aponta para o MESMO objeto
+            Account conta = contaEmpresa;
 
-            // Agora podemos chamar o método Loan, pois a variável bacc é do tipo BusinessAccount.
-            bacc.Loan(100.0);
-            Console.WriteLine($"Saldo de {bacc.Holder}: {bacc.Balance}");
+            conta.Deposit(50.0);     // OK: Deposit existe em Account
+            // conta.Loan(100.0);    // ERRO: Account não tem Loan
 
-            // PERIGO: a linha abaixo COMPILA, mas gera um erro (InvalidCastException)
-            // ao executar, pois acc2 aponta para um objeto do tipo SavingsAccount.
-            // BusinessAccount bacc2 = (BusinessAccount)acc2;
+            // O depósito aparece em contaEmpresa: é o mesmo objeto
+            Console.WriteLine(contaEmpresa.Balance);   // 150
 
-            // Teste para verificar o tipo antes de fazer a conversão.
-            if (acc2 is BusinessAccount)
+            // ------------------------------------------------------------------
+            // PARTE 2 - DOWNCASTING: voltar ao tipo da subclasse
+            // ------------------------------------------------------------------
+
+            // DOWNCASTING: enxergar o objeto de novo como BusinessAccount
+            BusinessAccount mesmaContaEmpresa = (BusinessAccount)conta;
+
+            // OK: o objeto apontado por conta É uma BusinessAccount
+            mesmaContaEmpresa.Loan(100.0);
+            Console.WriteLine(contaEmpresa.Balance);   // 250
+
+            // PERIGO: o compilador aceita, mas o objeto é uma SavingsAccount
+            Account outraConta =
+                new SavingsAccount(1003, "Carla", 100.0, 0.01);
+            // BusinessAccount erro = (BusinessAccount)outraConta;
+            // Compila, mas gera InvalidCastException ao executar!
+
+            // ------------------------------------------------------------------
+            // PARTE 3 - Por que usar upcasting?
+            // ------------------------------------------------------------------
+
+            // Upcasting permite guardar contas de tipos diferentes juntas
+            Account[] contas =
             {
-                BusinessAccount bacc3 = (BusinessAccount)acc2;
-                bacc3.Loan(200.0);
-                Console.WriteLine("Empréstimo realizado!");
-            }
-            else if (acc2 is SavingsAccount)
+                new Account(1001, "Ana", 100.0),
+                new BusinessAccount(1002, "Bruno", 100.0, 500.0),
+                new SavingsAccount(1003, "Carla", 100.0, 0.01)
+            };
+
+            foreach (Account contaAtual in contas)
             {
-                SavingsAccount sacc = (SavingsAccount)acc2;
-                sacc.UpdateBalance();
-                Console.WriteLine($"Saldo de {sacc.Holder} atualizado: {sacc.Balance}");
+                // Downcasting só depois de testar o tipo real do objeto
+                if (contaAtual is BusinessAccount)
+                {
+                    BusinessAccount contaEmpresaAtual = (BusinessAccount)contaAtual;
+                    contaEmpresaAtual.Loan(200.0);
+                }
+                else if (contaAtual is SavingsAccount)
+                {
+                    SavingsAccount contaPoupancaAtual = (SavingsAccount)contaAtual;
+                    contaPoupancaAtual.UpdateBalance();
+                }
+                Console.WriteLine($"{contaAtual.Holder}: {contaAtual.Balance:F2}");
             }
+            // Saída:  Ana: 100,00  |  Bruno: 300,00  |  Carla: 101,00
         }
     }
 }

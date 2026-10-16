@@ -6,7 +6,7 @@ Repositório com o material de aula (slides, códigos, etc.) da disciplina *DPEE
   
 Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os alunos serão desafiados a resolver problemas computacionais utilizando os conceitos da programação orientada a objetos. Para aqueles que não atingirem a média mínima de 7,00 e que mantiverem a frequência mínima necessária, será oferecida a oportunidade de realizar um exame de recuperação.
 
-## Cronograma previsto para o semestre (1/2024)
+## Cronograma previsto para o semestre (2/2026)
 
 | Aula | Data       | Assunto                                                                                       |
 |------|------------|-----------------------------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | - Listas.                                                                                     |
 |      |            | - Definição e conceito de associação.                                                         |
 |      |            | - Tipos de associação: agregação, composição e dependência.                                   |
-| 10   | 09/10/2026 | Herança                                                                                       |
+| 10   | 16/10/2026 | Herança                                                                                       |
 |      |            | - Definição e conceito de herança em POO.                                                     |
 |      |            | - Vantagens.                                                                                  |
 |      |            | - Recomendações e boas práticas de uso da herança.                                            |
@@ -57,20 +57,20 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | - Upcasting e downcasting.                                                                    |
 |      |            | - Sobreposição.                                                                               |
 |      |            | - Classes e métodos selados.                                                                  |
-| 11   | 16/10/2026 | Polimorfismo                                                                                  |
+| 11   | 23/10/2026 | Polimorfismo                                                                                  |
 |      |            | - Definição de polimorfismo e sua importância na POO.                                         |
 |      |            | - Polimorfismo estático: sobrecarga de métodos e operadores.                                  |
 |      |            | - Polimorfismo dinâmico: substituição de métodos em tempo de execução.                        |
-| 12   | 23/10/2026 | Métodos e Classes Abstratas e Interfaces                                                      |
+| 12   | 30/10/2026 | Métodos e Classes Abstratas e Interfaces                                                      |
 |      |            | - Introdução ao conceito de métodos e classes abstratas.                                      |
 |      |            | - Implementação de métodos e classes abstratas.                                               |
 |      |            | - Interfaces.                                                                                 |
-| 13   | 30/10/2026 | Extension Methods e Detecção e tratamento de erros                                            |
+| 13   | 06/11/2026 | Extension Methods e Detecção e tratamento de erros                                            |
 |      |            | - Definição e utilização de extension methods.                                                |
 |      |            | - Exceções.                                                                                   |
 |      |            | - Blocos try/catch/finally.                                                                   |
 |      |            | - Lançamento de exceções.                                                                     |
-| 14   | 06/11/2026 | Exercícios                                                                                    |
+| 14   | 13/11/2026 | Exercícios                                                                                    |
 |      |            | - Resolução de exercícios com conceitos aprendidos até o momento.                             |
-| 15   | 27/11/2026 | Avaliação 2                                                                                   |
-| 16   | 04/12/2026 | Exame                                                                                         |
+| 15   | 04/12/2026 | Avaliação 2                                                                                   |
+| 16   | 11/12/2026 | Exame                                                                                         |
