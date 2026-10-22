@@ -57,14 +57,14 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | - Upcasting e downcasting.                                                                    |
 |      |            | - Sobreposição.                                                                               |
 |      |            | - Classes e métodos selados.                                                                  |
-| 11   | 23/10/2026 | Polimorfismo                                                                                  |
-|      |            | - Definição de polimorfismo e sua importância na POO.                                         |
-|      |            | - Polimorfismo estático: sobrecarga de métodos e operadores.                                  |
-|      |            | - Polimorfismo dinâmico: substituição de métodos em tempo de execução.                        |
-| 12   | 30/10/2026 | Métodos e Classes Abstratas e Interfaces                                                      |
+| 11   | 23/10/2026 | Métodos e Classes Abstratas e Interfaces                                                      |
 |      |            | - Introdução ao conceito de métodos e classes abstratas.                                      |
 |      |            | - Implementação de métodos e classes abstratas.                                               |
 |      |            | - Interfaces.                                                                                 |
+| 12   | 30/10/2026 | Polimorfismo                                                                                  |
+|      |            | - Definição de polimorfismo e sua importância na POO.                                         |
+|      |            | - Polimorfismo estático: sobrecarga de métodos e operadores.                                  |
+|      |            | - Polimorfismo dinâmico: substituição de métodos em tempo de execução.                        |
 | 13   | 06/11/2026 | Extension Methods e Detecção e tratamento de erros                                            |
 |      |            | - Definição e utilização de extension methods.                                                |
 |      |            | - Exceções.                                                                                   |
