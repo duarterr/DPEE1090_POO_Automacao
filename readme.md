@@ -61,16 +61,16 @@ Serão realizadas duas avaliações parciais ao longo do semestre, nas quais os 
 |      |            | - Introdução ao conceito de métodos e classes abstratas.                                      |
 |      |            | - Implementação de métodos e classes abstratas.                                               |
 |      |            | - Interfaces.                                                                                 |
-| 12   | 30/10/2026 | Polimorfismo                                                                                  |
+| 12   | 06/11/2026 | Polimorfismo                                                                                  |
 |      |            | - Definição de polimorfismo e sua importância na POO.                                         |
 |      |            | - Polimorfismo estático: sobrecarga de métodos e operadores.                                  |
 |      |            | - Polimorfismo dinâmico: substituição de métodos em tempo de execução.                        |
-| 13   | 06/11/2026 | Extension Methods e Detecção e tratamento de erros                                            |
+| 13   | 27/11/2026 | Extension Methods e Detecção e tratamento de erros                                            |
 |      |            | - Definição e utilização de extension methods.                                                |
 |      |            | - Exceções.                                                                                   |
 |      |            | - Blocos try/catch/finally.                                                                   |
 |      |            | - Lançamento de exceções.                                                                     |
-| 14   | 27/11/2026 | Exercícios                                                                                    |
+| 14   | 04/12/2026 | Exercícios                                                                                    |
 |      |            | - Resolução de exercícios com conceitos aprendidos até o momento.                             |
-| 15   | 04/12/2026 | Avaliação 2                                                                                   |
+| 15   | 09/12/2026 | Avaliação 2 (Conta como sexta no calendário acadêmico)                                        |
 | 16   | 11/12/2026 | Exame                                                                                         |
